@@ -1,0 +1,140 @@
+* {
+  font-family: "Armata";
+  font-size: 14px;
+}
+
+body {
+  background-color: rgb(98, 153, 117);
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.col-sm-4 {
+  border-radius: 2%;
+  background-color: rgb(210, 238, 159);
+  height: 530px;
+  margin: 10px;
+  padding: 5px;
+  width: 400px;
+}
+
+.col-sm-3 {
+  border-radius: 2%;
+  background-color: rgb(210, 238, 159);
+  height: 480px;
+  margin: 10px;
+  padding: 5px;
+  width: 300px;
+}
+
+.col-sm-2 {
+  width: 420px;
+  display: flex;
+  display: inline-block;
+}
+
+.transfer {
+  background-color: rgb(210, 238, 159);
+  border-radius: 2%;
+  margin: 10px;
+  padding: 10px;
+  height: 260px;
+}
+
+.sale {
+  background-color: rgb(210, 238, 159);
+  border-radius: 2%;
+  margin: 10px;
+  padding: 10px;
+  height: 260px;
+}
+
+.container {
+  width: 100%;
+}
+
+#user-list,
+#product-list{
+height: 120px;
+}
+
+#history {
+  width: 400px;
+  height: auto;
+  border-radius: 2%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-weight: bold;
+  color: rgb(98, 153, 117);
+}
+
+#userlist {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+#productlist {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(210, 238, 159);
+}
+
+h4 {
+  text-align: center;
+  color: rgb(98, 153, 117);
+  font-weight: bold;
+}
+
+#submit1 {
+  margin-top: 150px;
+  margin-left: 10px;
+  width: 30%;
+  background-color: rgb(98, 153, 117);
+}
+
+#submit2 {
+  margin-top: 85px;
+  margin-left: 10px;
+  width: 30%;
+  background-color: rgb(98, 153, 117);
+}
+
+#send {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 30%;
+  background-color: rgb(98, 153, 117);
+}
+
+.form-control {
+  width: 94%;
+  height: 30px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-left: 10px;
+  margin-top: 10px;
+  color: rgb(98, 153, 117);
+}
+
+.history-item {
+  list-style: none;
+  
+}
+

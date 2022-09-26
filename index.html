@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <title>Patika 2. Hafta Ödevi</title>
+</head>
+
+<body>
+  <h2>GREEN BANK FOR EASY TRANSACTIONS...</h2>
+
+  <!-- kullanıcı ekleme bölümü------------------------------------>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+
+        <form>
+          <h4>ADD USER</h4>
+          <div class="form-group">
+            <label for="formGroupTitle">Name</label>
+            <input type="text" class="form-control" id="userFullName" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="formGroupTitle">Amount</label>
+            <input type="number" class="form-control" id="userAmount" placeholder="Enter your amount">
+          </div>
+        </form>
+        <button class="btn btn-success" id="submit1" onclick="addUserList()" type="submit">SUBMIT</button>
+        </form>
+      </div>
+
+      <!-- para transferinin yapıldığı bölüm ------------------------->
+
+      <div class="col-sm-2">
+
+        <div class="transfer">
+
+          <form class="form form-transfer">
+            <h4>MONEY TRANSFER</h4>
+
+            <select class="form-control" id="money1">
+              <option value="">From</option>
+            </select>
+            <select class="form-control" id="money2">
+              <option value="">To</option>
+            </select>
+
+            <div class="form-group">
+              <label for="formGroupTitle">How much money do you want send?</label>
+              <input type="number" class="form-control" id="transferAmount" placeholder="Enter your amount">
+            </div>
+
+
+          </form>
+
+          <button class="btn btn-success" id="send" onclick="moneyTransfer()" type="submit">SEND</button>
+        </div>
+
+        <!-- ürün satışının yapıldığı bölüm ------------------------->
+
+        <div class="sale">
+
+          <form class="form form-transfer">
+            <h4 class="form-title">PRODUCT SALE </h4>
+            <select class="form-control" id="product1">
+              <option>From</option>
+            </select>
+            <select class="form-control" id="product2">
+              <option>To</option>
+            </select>
+
+            <div class="form-group">
+              <label for="formGroupTitle">What product do you want sale?</label>
+              <input type="text" class="form-control" id="transferProduct" placeholder="Enter your product name">
+
+            </div>
+
+          </form>
+          <button class="btn btn-success" id="send" onclick="productTransfer()" type="submit">SALE</button>
+
+        </div>
+      </div>
+
+      <!-- ürün ekleme bölümü -------------------------------------------->
+
+      <div class="col-sm-4">
+        <form>
+          <h4>ADD PRODUCT</h4>
+          <div class="form-group">
+            <label for="formGroupTitle">Name</label>
+            <input type="text" class="form-control" id="productName" placeholder="Enter your product name">
+          </div>
+          <div class="form-group">
+            <label for="formGroupTitle">Price</label>
+            <input type="number" class="form-control" id="productPrice" placeholder="Enter your product price">
+          </div>
+          <div class="form-group">
+            <label for="formGroupTitle">Amount of stock</label>
+            <input type="number" class="form-control" id="productStock" placeholder="Enter your amount of stock">
+          </div>
+        </form>
+        <button class="btn btn-success" id="submit2" onclick="addProductList()" type="submit">SUBMIT</button>
+        </form>
+      </div>
+      
+    </div>
+
+    <div class="row">
+      <!-- eklenen kişilerin geldiği liste ---------------------------------->
+      <div class="col-sm-4" id="user-list">
+        <ul id="userlist">
+          <li class="user-list-item1">
+            <p>NAME</p>
+          </li>
+          <li class="user-list-item2">
+            <p>AMOUNT</p>
+          </li>
+          <li></li>
+        </ul>
+      </div>
+
+      <!-- tarihçe bölümü --------------------------------------------------->
+      <div class="col-sm-4" id="history">
+        <p>HISTORY</p>
+      </div>
+
+      <!-- eklenen ürünlerin geldiği liste ----------------------------------->
+      <div class="col-sm-4" id="product-list">
+        <ul id="productlist">
+          <li class="product-list-item1">
+            <p>NAME</p>
+          </li>
+          <li class="product-list-item2">
+            <p>PRICE</p>
+          </li>
+          <li class="product-list-item3">
+            <p>STOCK</p>
+          </li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <script src="index.js"></script>
+  
+
+
+</body>
+
+</html>
